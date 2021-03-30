@@ -41,7 +41,7 @@ function defaultClock() {
  * @param {Number} [options._timesToRetryFailedRequests] Number of times to retry a failed request, according to {@link https://github.com/visionmedia/superagent/blob/master/lib/request-base.js}
  * @see {@link https://auth0.com/docs/api/authentication}
  */
-function WebAuth(options) {
+function WebAuth({ ...options }) {
   /* eslint-disable */
   assert.check(
     options,
